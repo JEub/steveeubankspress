@@ -1,4 +1,7 @@
+
 steveeubankspressenv/
+venv/
+
 
 *.pyc
 __pycache__/
