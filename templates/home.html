@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <h1>Welcome!</h1>
+        <h3>The site is currently under construction, but we would love to get your input on what you would like to see here. </h3>
+
+        <h3>Recent Books</h3>
+        {% for books in books %}
+        <h4>{{books.title}}</h4>
+        <h6>Published -  {{books.published_date.strftime("%Y-%m-%d")}}</h6>
+        <p>{{books.synopsis}}</p>
+
+        {% endfor %}
+    </body>
+</html>
