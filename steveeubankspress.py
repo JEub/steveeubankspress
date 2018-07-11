@@ -18,7 +18,15 @@ def index():
 
 @app.route('/pubs')
 def pubs():
-    return "This is the page for all publications in the reverse order in which they were published."
+    _publications = db.pubs.find({'type':'article'}).sort('published_date',pymongo.DESCENDING)
+    pubs = [pub for pub in _publications]
+
+    _books = db.pubs.find({'type':'book'}).sort('published_date',pymongo.DESCENDING)
+    books = [book for book in _books]
+
+    return render_template('pubs_list.html',pubs=pubs, books=books)
+
+
 
 if __name__=="__main__":
     app.run(host='0.0.0.0')

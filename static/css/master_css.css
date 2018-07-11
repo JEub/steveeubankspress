@@ -1,3 +1,9 @@
 .background-home{
     background-color: #f6a000;
 }
+
+.centered{
+    position: relative;
+    top: 50%;
+    left: 50%;
+}

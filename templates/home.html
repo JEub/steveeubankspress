@@ -5,29 +5,37 @@ Steve Eubanks Press
 {% endblock title %}
 
 {% block carouselblock %}
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img class="d-block w-100" src="/home/james/Downloads/headshot2.png" alt="First slide">
+<div class="jumbotron" style="padding-top: 1.5em; background: #000000;">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="margin:0 auto;" data-interval="10000">
+        <div class="carousel-inner centered">
+            <div class="carousel-item active">
+                <div class="container">
+                    <img class="d-block w-100" src="{{ url_for('static',filename='img/steve_headshot2.JPG') }}" alt="First slide">
+                </div>
+            </div>
+            <!-- All American Novel -->
+            <div class="carousel-item">
+                <div class="container">
+                    <img class='d-block w-100' src="{{ url_for('static',filename='img/all_american_book.jpg') }}" alt="Book_Cover">
+                </div>
+            </div>
         </div>
-        {% for book in books %}
-        <div class="carousel-item">
-            <img class='d-block w-100' src="{{ book.cover_image }}" alt="Book_Cover">
-        </div>
-        {% endfor %}
     </div>
 </div>
+
 {% endblock carouselblock %}
 
 {% block bodyblock %}
-<div class="jumbotron">
+<!-- <div class="jumbotron">
     <h1>Welcome!</h1>
     <h3>The site is currently under construction, but we would love to get your input on what you would like to see here. </h3>
-</div>
-<div class="container">
-    <h3>About Steve</h3>
-    <p><img class="rounded" src="{{ url_for('static',filename='img/Steve_headshot.jpg') }}" alt="SteveEubanks" height="150px" style="float: left; padding-right: 1em;">Steve Eubanks is a New York Times bestselling author and award-winning journalist. He has authored or co-authored more than 30 titles in biography, business and narrative non-fiction. An accomplished speaker, Steve's diverse range has allowed him to do everything from teach the apprentice business schools for the PGA of America to provide the keynote address at the Joint Forces Reserve Orientation Course of the Command Second Fleet. </p>
-
+</div> -->
+<div class="row">
+    <div class="container">
+        <h3>About Steve</h3>
+        <img class="rounded col-3" src="{{ url_for('static',filename='img/steve_headshot_2.JPG') }}" alt="SteveEubanks" height="100%" style="float: left; padding: 0 0 1em 1em;">
+        <p class="col-9">Steve Eubanks is a New York Times bestselling author and award-winning journalist. He has authored or co-authored more than 30 titles in biography, business and narrative non-fiction. An accomplished speaker, Steve's diverse range has allowed him to do everything from teach the apprentice business schools for the PGA of America to provide the keynote address at the Joint Forces Reserve Orientation Course of the Command Second Fleet. </p>
+    </div>
 </div>
 <div class="container">
     <h3>Recent Books</h3>
