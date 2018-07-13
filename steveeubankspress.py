@@ -16,15 +16,15 @@ def index():
     books = [book for book in _books]
     return render_template('home.html',books=books)
 
-@app.route('/pubs')
-def pubs():
-    _publications = db.pubs.find({'type':'article'}).sort('published_date',pymongo.DESCENDING)
-    pubs = [pub for pub in _publications]
+#@app.route('/pubs')
+#def pubs():
+#    _publications = db.pubs.find({'type':'article'}).sort('published_date',pymongo.DESCENDING)
+#    pubs = [pub for pub in _publications]
 
-    _books = db.pubs.find({'type':'book'}).sort('published_date',pymongo.DESCENDING)
-    books = [book for book in _books]
+#    _books = db.pubs.find({'type':'book'}).sort('published_date',pymongo.DESCENDING)
+#    books = [book for book in _books]
 
-    return render_template('pubs_list.html',pubs=pubs, books=books)
+#    return render_template('pubs_list.html',pubs=pubs, books=books)
 
 
 
