@@ -1,0 +1,45 @@
+.background-home{
+    background-color: #f7f9e3;
+    padding-bottom: 4em;
+}
+
+.centered{
+    position: inherit;
+    left: 15%;
+    align-items: center;
+    align-content: center;
+}
+
+.header-title{
+    text-shadow: 2px 1px #00c635;
+}
+.section-title{
+    text-shadow: 2px 1px #00c635;
+    text-align: center;
+}
+.jt-carousel{
+    height: 200px;
+    width: 400px;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    background: inherit;
+    margin: 0 auto;"
+}
+
+.carousel-image{
+    height: auto;
+    width: auto;
+    max-height: 200px;
+    max-width: 200px;
+}
+
+div{
+    clear: both;
+}
+img.rounded{
+     padding: 10px;
+}
+.body-block{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
