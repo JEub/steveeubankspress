@@ -6,10 +6,19 @@ Steve Eubanks Press
 
 {% block headerblock %}
 <div class="container">
-    <h1 class="header-title"style="text-align: left; float: left;">Steve Eubanks Press</h1>
-    <a style="text-align: right; float: right;" href="https://www.facebook.com/steve.eubanks.16/">
-        <img src="{{url_for('static',filename='css/facebook-brands.svg')}}" alt="Facebook" height='40px'>
-    </a>
+    <div class="container">
+        <h1 class="header-title"style="text-align: center; font-family: 'Vast Shadow', cursive;">Steve Eubanks</h1>
+        <h6 style="text-align: center; font-family: Rye, cursive;">New York Times Bestselling Author</h6>
+    </div>
+    <div style="text-align: center;">
+        <a href="https://www.facebook.com/steve.eubanks.16/">
+            <i class="fab fa-facebook" style="color: black;"></i>
+        </a>
+        <a href="https://twitter.com/jseubanks">
+            <i class='fab fa-twitter' style="color: black;"></i>
+        </a>
+    </div>
+    <div style="border-bottom: 5px solid black; padding-top:10px;"></div>
 </div>
 
 {% endblock headerblock %}
@@ -17,8 +26,14 @@ Steve Eubanks Press
 {% block carouselblock %}
 <div class="jumbotron jt-carousel">
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="margin:0 auto;" data-interval="10000">
+
         <div class="carousel-inner centered">
             <div class="carousel-item active">
+                <div class="container">
+                    <a href="#River"><img class='d-block w-100 carousel-image' src="{{ url_for('static',filename='img/Going down to the river cover.jpg') }}" alt="Goin down cover"></a>
+                </div>
+            </div>
+            <div class="carousel-item">
                 <div class="container">
                     <a href="#Augusta"><img class="d-block w-100 carousel-image" src="{{ url_for('static',filename='img/Augusta cover.jpg') }}" alt="Augusta_cover"></a>
                 </div>
@@ -34,11 +49,7 @@ Steve Eubanks Press
                     <a href="#Dixie"><img class='d-block w-100 carousel-image' src="{{ url_for('static',filename='img/win and die cover.jpg') }}" alt="To Win and Die in Dixie Cover"></a>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="container">
-                    <a href="#River"><img class='d-block w-100 carousel-image' src="{{ url_for('static',filename='img/Going down to the river cover.jpg') }}" alt="Goin down cover"></a>
-                </div>
-            </div>
+
         </div>
     </div>
 </div>

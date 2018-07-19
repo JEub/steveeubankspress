@@ -2,7 +2,9 @@
     background-color: #f7f9e3;
     padding-bottom: 4em;
 }
-
+.header-border-bottom{
+    border-bottom: 5px solid black;
+}
 .centered{
     position: inherit;
     left: 15%;
@@ -28,9 +30,9 @@
 
 .carousel-image{
     height: auto;
-    width: auto;
+    width: inherit;
     max-height: 200px;
-    max-width: 200px;
+    /* max-width: 133px; */
 }
 
 div{
