@@ -10,8 +10,14 @@
     left: 15%;
     align-items: center;
     align-content: center;
+    text-align: center;
 }
-
+.book-block{
+    padding-bottom: 2em;
+}
+.white-text{
+    color: white;
+}
 .header-title{
     text-shadow: 2px 1px #00c635;
 }
@@ -29,10 +35,13 @@
 }
 
 .carousel-image{
+    display: block;
     height: auto;
     width: inherit;
     max-height: 200px;
-    /* max-width: 133px; */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 133px;
 }
 
 div{
