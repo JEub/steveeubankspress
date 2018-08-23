@@ -30,6 +30,19 @@
     </head>
     <body>
         <div class="background-home">
+            <nav class="navbar navbar-expand-lg justify-content-between">
+                <a class="navbar-brand" href="{{url_for('index')}}" style="color:black;">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link" href="{{url_for('index',_anchor='About_Steve')}}">About the Author</a>
+                        <a class="nav-item nav-link" href="{{url_for('index')}}#Recent_books">Recent Books</a>
+                        <a class="nav-item nav-link" href="{{url_for('books')}}">All Books</a>
+                    </div>
+                </div>
+            </nav>
             <div class="container body-block">
                 {% block headerblock %}
                 {% endblock headerblock%}
