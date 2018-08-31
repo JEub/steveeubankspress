@@ -5,7 +5,11 @@ import os
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route('/')
+def spalsh_page():
+    return render_template('splash.html')
+
+@app.route("/home")
 def index():
     return render_template('home.html')
 

@@ -58,3 +58,16 @@ img.rounded{
 #navbarNavAltMarkup a{
     color: black;
 }
+
+.center-center{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+}
+.round-image-with-border {
+    border-radius: 50%;
+    border-color: #BADA55;
+    border-width: 5px;
+    border-style: solid;
+}
