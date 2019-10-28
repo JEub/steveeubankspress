@@ -1,22 +1,29 @@
+# Python Environment
 SEPressEnv/
 steveeubankspressenv/
 venv/
 
-
+# Optimized files
 *.pyc
 __pycache__/
 
 instance/
 
+# Test files
 .pytest_cache/
 .coverage
 htmlcov/
 
+# build and dist files
 dist/
 build/
 
 *egg-info/
 *.egg-info/
 
+# Secret files and settings files
 .secret
-mongoconnectionsettings.py
+config.py
+
+# VS Code environment
+.vscode/
