@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+
+{% block headerblock %}
+<div class="container">
+    <div class="container">
+        <h1 class="header-title"style="text-align: center; font-family: 'Vast Shadow', cursive;">Steve Eubanks</h1>
+        <h6 style="text-align: center; font-family: Rye, cursive;">New York Times Bestselling Author</h6>
+    </div>
+    <div style="text-align: center;">
+        <a href="https://www.facebook.com/steve.eubanks.16/" class="leader">
+            <i class="fab fa-facebook" style="color: black; font-size:25px;"></i>
+        </a>
+        <a href="https://twitter.com/jseubanks" class="leader">
+            <i class='fab fa-twitter' style="color: black; font-size:25px; padding-left: 20px;"></i>
+        </a>
+        <a href="{{url_for('index')}}">
+            <i class='fas fa-home' style="color: black; font-size:25px; padding-left: 20px;"></i>
+        </a>
+    </div>
+
+    <div style="border-bottom: 5px solid black; padding-top:10px;"></div>
+</div>
+{% endblock headerblock %}
+
+{% block bodyblock %}
+<div class="container-fluid">
+    <h3>Selected Books by Steve Eubanks</h3>
+    <div class="container book-block">
+        <h4 id="Gordon">Racing Back to the Front</h4>
+        <img class="rounded float-left" src="{{url_for('static',filename='img/jeff gordon cover.jpg')}}" alt="Jeff Gordon Cover" height='150px'>
+
+        <p>"As a longtime NASCAR fan, I often wondered how Jeff Gordon found his way into the seat of the 24 car and how it felt once he got there. We all knew the basic details, but the specifics were lacking. In his memoir, Gordon fills in the blanks for us, offering interesting insights into how it all came together. More importantly, he offers his perspective on the team, and how decisions are made week to week and how he and the team react to events on the track. When you watch a race, and JG goes from 2nd to 8th at lap 35, you sit there wondering 'what happened?' 'What are they thinking?' Having read this book, I now have an idea." ~ Caroline - Amazon Review</p>
+
+        <p>"While I`m a NASCAR fan I wouldn't say I`m a typical Jeff Gordon fan. While I`ve always admired his talent he wasn't my favorite racer. After reading this I have even more admiration for him and recommend this book to any NASCAR fan or anyone else that would like to know more about stock car racing in general. You'll have a much different appreciation for Jeff Gordon and all the other people of NASCAR including drivers, crew chiefs, owners and what it takes to compete." ~ John S. - Amazon Review</p>
+        <a href="https://www.amazon.com/Jeff-Gordon-Racing-Front-My-Paperback/dp/B010EVB2UQ/ref=sr_1_3?s=books&ie=UTF8&qid=1532044083&sr=1-3&keywords=racing+back+to+the+front" class="btn btn-success float-right">Amazon</a>
+    </div>
+
+    <div class="container book-block">
+        <h4 id="TyMurry">King of the Cowboys</h4>
+        <img class="rounded float-right" src="{{url_for('static',filename='img/murray cover.jpg')}}" alt="Cowboy King Cover" height='150px'>
+        <p>The most famous rodeo champion of all time tells his amazing true story -- and opens a fascinating window into the world of the professional cowboy.</p>
+
+        <p>Ty Murray was born to be a rodeo star -- in fact, his first words were "I'm a bull rider." Before he was even out of diapers, he was climbing atop his mother's Singer sewing machine case, which just so happened to be the perfect mechanical bull for a 13-month-old. Before long, Ty was winning peewee events by the hatful, and his special talent was obvious...obvious even to a man called Larry Mahan. At the time the greatest living rodeo legend, six-time champion Mahan invited a teenaged Ty Murray to spend a summer on his ranch learning not just rodeoing but also some life lessons. Those lessons prepared Ty for a career that eventually surpassed even Mahan's own -- Ty's seven All-Around Championships.</p>
+
+        <p>In King of the Cowboys, Ty Murray invites us into the daredevil world of rodeo and the life of the cowboy. Along the way, he details a life spent constantly on the road, heading to the next event; the tragic death of his friend and fellow rodeo star Lane Frost; and the years of debilitating injuries that led some to say Ty Murray was finished.</p>
+
+        <p>He wasn't. In fact, Ty Murray has brought the world of rodeo into the twenty-first century, through his unparalleled achievements in the ring, through advancing the case for the sport as a television color-commentator, and through the Professional Bull Riders, an organization he helped to build.</p>
+
+        <p>In the end, though, Ty Murray is first and foremost a cowboy, and now that he's retired from competition, he takes this chance to reflect on his remarkable life and career. In King of the Cowboys, Ty Murray opens up his world as never before.</p>
+
+        <a href="https://www.amazon.com/King-Cowboys-Ty-Murray/dp/141657039X/ref=sr_1_1?s=books&ie=UTF8&qid=1532044349&sr=1-1&keywords=king+of+the+cowboys+ty+murray" class="btn btn-success float-right">Amazon</a>
+    </div>
+
+    <div class="container book-block">
+        <h4 id="Turn">At the Turn</h4>
+        <img class="rounded float-left" src="{{url_for('static',filename='img/at the turn cover.jpg')}}" alt="At the turn Cover" height='150px'>
+
+        <p>At the turn of the new millennium, the sports world is about to change forever.</p>
+
+        <p>In two-and-a-half astonishing years, professional golf was reborn. Formerly dismissed as an elite, white, middle-aged, rich man's game, golf has rocketed into the mainstream to become a multicultural, multibillion-dollar sport, with young, hotshot athletes to rival those in the NBA and demographics to win the hearts of networks and merchandisers everywhere.</p>
+
+        <p>From the U.S. team's devastating loss at the 1997 Ryder Cup to their come-from-behind triumph at the 1999 Cup through the record-setting summer of 2000, Steve Eubanks tells the story of the new boys, the bad boys, and the good old boys who changed the way America -- and the world -- think about golf. With detailed coverage of the rise of David Duval, Sergio Garcia, and, of course, Tiger Woods, as well as the backbiting and chaos at the British Open, the backstage power struggles at the PGA, and the tragic death of Payne Stewart, At the Turn is a must-read for any fan.</p>
+
+        <p>This is the true story of a game's seemingly miraculous transformation -- a no-holds-barred, reporter's-eye view of pro golf, written by a true insider who rivals John Feinstein at his best.</p>
+
+        <a href="https://www.amazon.com/At-Turn-Electrifying-Changed-Forever/dp/060960743X/ref=sr_1_1?ie=UTF8&qid=1532052449&sr=8-1&keywords=at+the+turn+steve+eubanks" class="btn btn-success float-right">Amazon</a>
+    </div>
+
+    <div class="container book-block">
+        <h4 id="BobSledding">But Now I See</h4>
+        <img class="rounded float-right" src="{{url_for('static',filename='img/holcolm cover.jpg')}}" alt="Bobsledding Cover" height='150px'>
+        <p>One of the top bobsledders in the world and leader of the four-man American team, Steven Holcomb had finished sixth in the 2006 Olympics and medaled in nearly every competition he entered. He was considered a strong gold contender for the 2010 Vancouver Olympic Winter Games. Talented, aggressive, and fearless, he was at the top of his game. But he had a dangerous secret.</p>
+
+        <p>Steven Holcomb was going blind.</p>
+
+        <p>In the prime of his athletic career, he was diagnosed with keratoconus—a degenerative disease affecting 1 in 1,000 and leaving 1 in 4 totally blind without a cornea transplant. In the world of competitive sports, it was a dream killer. Not a sport for the timid, bobsledding speeds approach 100 miles per hour through a series of hairpin turns. Serious injuries—even deaths—can result. But Holcomb kept his secret from his coach, sled mates, and the public for months and continued to drive the legendary sled The Night Train.</p>
+
+        <p>When he finally told his coach, Holcomb was led to a revolutionary treatment, later named the Holcomb C3-R. With his sight restored to 20/20, Holcomb became the first American in 50 years to win the International Bobsled and Skeleton Federation World Championship, and the first American bobsledder since 1948 to win the Olympic gold medal.</p>
+
+        <p>With a foreword by Geoff Bodine, NASCAR champion and founder of the Bo-Dyn Bobsled Project, But Now I See is the intimate portrait of a man’s pursuit of a dream, laced with humility and the faith to find a way when all seems hopeless. It’s about knowing anything is possible and the gift of a second chance.</p>
+
+        <a href="https://www.amazon.com/But-Now-See-Journey-Blindness/dp/1939529859/ref=sr_1_sc_1?s=books&ie=UTF8&qid=1532044957&sr=1-1-spell&keywords=but+now+I+see+steven+holcolmb" class="btn btn-success float-right">Amazon</a>
+    </div>
+
+    <div class="container book-block">
+        <h4 id="Pro">The Pro</h4>
+        <img class="rounded float-left" src="{{url_for('static',filename='img/the pro cover.jpg')}}" alt="The Pro" height='150px'>
+
+        <p>Butch Harmon is the world’s number one golf coach. He taught Tiger Woods through one of the greatest stretches of victories in golf history (and, perhaps even more conspicuously, did not teach Tiger Woods following his unprecedented run), as well as superstars like Greg Norman, Adam Scott, Fred Couples, Darren Clarke, Natalie Gulbis, and Davis Love III. How did he become such a legendary teacher and mentor? The answer is simple: He learned from watching his father.</p>
+
+        <p>The Harmons are the First Family of golf, and Claude Harmon, Sr., was the greatest of them all. His skill as a player, an innovator, a teacher, a devoted father, a loyal friend, and a peer of giants such as Ben Hogan has gone largely unappreciated by all but those who knew him best. In this book by his son, he finally gets his due. In <em>The Pro</em>, Butch Harmon paints a compelling portrait of an era in sports before the emergence of big media and bigger money, and shows how the lessons he learned about life and golf at his father’s knee made him the man he is today.</p>
+
+        <p><em>The Pro</em> is both a family and a golf memoir, as well as an inside look at what it takes to teach the Tigers of the world. It describes how Butch and his brothers, who are also teachers, transfer their father’s unique wit, wisdom, and philosophy to the next generation of golfers. Sometimes their advice relates to the game, sometimes they simply offer words of encouragement and motivation, sometimes they make pointed criticisms intended to shock their students into focus, and sometimes they try to impart simple advice about “walking around through life.” The Harmon brothers are teachers who share a special quality: All of their lessons are passed down from their father.</p>
+
+        <p>Millions of golf fans know Butch Harmon; many are even familiar with his father and brothers. But never before have we been given such an intimate look at life among the legends of golf. <em>The Pro</em> is the story of an extraordinary father and son that will resonate with anyone who has ever looked back on life and recognized the wisdom of their parents’ teachings.</p>
+
+        <p>“<em>Golf's hard</em>,”Dad would say, pointing a meaty finger at me as if he were about to reveal the secret of the Rosetta Stone. “Good golf is damn hard, and championship golf is something only a few will ever see. But that’s how it should be. If it were easy, everybody would do it. And where’s the fun in that?”</p>
+
+        <p>From Butch Harmon, the world’s number one golf coach, comes the inside story of how he learned everything he knows about golf and life from his father, Claude Harmon, Sr. Both a family memoir and a reminiscence of growing up among the legends of sport, <em>The Pro </em> is a portrait of one extraordinary family and the game that will carry their legacy for years to come.</p>
+
+        <a href="https://www.amazon.com/Pro-Lessons-Father-Claude-Harmon/dp/0307338045/ref=sr_1_1?s=books&ie=UTF8&qid=1532044836&sr=1-1&keywords=the+pro+butch+harmon" class="btn btn-success float-right">Amazon</a>
+    </div>
+
+    <div class="container book-block">
+        <h4 id="st james">Ride of Your Life</h4>
+        <img class="rounded float-right" src="{{url_for('static',filename='img/st. james cover.jpg')}}" alt="st james" height='150px'>
+
+        <p><strong>Fasten your seat belts! Indy 500 driver Lyn St. James provides inspirational advice for everyone as she recounts her inspiring career as a world-renowned Indy driver</strong>. Lyn St. James was 45 years old when she joined the world of Indy racing. Now known as the American Woman Racing Icon of the Century, Lyn is a testament to the power of determination and positive thinking. In this inspiring, motivational book, St. James chronicles her last Indy 500 and looks back on a career filled with challenges. She recounts years of adversity and the struggle to obtain corporate sponsorships, despite being named the Indy 500 Rookie of the Year. She recalls record-breaking runs at Talladega and Daytona, terrifying crashes, and the joys of mentoring young women drivers. On every page of this story people will find the motivation and encouragement to follow their dreams and reach their goals.</p>
+
+        <a href="https://www.amazon.com/Lyn-St-James-Incredible-Journey/dp/0982884206/ref=sr_1_1?s=books&ie=UTF8&qid=1532044566&sr=1-1&keywords=Lyn+st.+james" class="btn btn-success float-right">Amazon</a>
+    </div>
+
+    <div class="container book-block">
+        <h4 id="Hogan">Mr. Hogan, the Man I Knew</h4>
+        <img class="rounded float-left" src="{{url_for('static',filename='img/tschetter cover.jpg')}}" alt="Hogan Cover" height='150px'>
+
+        <p>Ben Hogan is known as the greatest ball striker of all time, and he was also one of the most private. These are the Hogan stories that you've never heard, stories that unlock the mystery to who he was as person.</p>
+
+        <p>As a collegiate golfer in the 1980's, Kris Tschetter was fortunate enough to gain membership to the prestigious Shady Oaks Country Club in Texas where Ben Hogan was a member. There was an unwritten rule at the club: Don't bother Mr. Hogan. But 18-year-old Tschetter was unaware of the spell he held over the golf world when she first passed him in the halls of Shady Oaks. Maybe it was Tschetter's work ethic, or maybe it was just her youthful enthusiasm, but Hogan noticed her practicing and offered to help her with her swing. And a unique friendship began.</p>
+
+        <p>By the time Tschetter met Mr. Hogan he was in his 70's and although his golf swing hadn't changed, his enthusiasm for the game had waned. The two spent countless hours practicing together on the "little nine" at Shady Oaks, and Tschetter saw a side of Mr. Hogan that few ever knew. While he taught her priceless lessons on golf and life, she helped him recapture his passion for golf by giving him the chance to take the journey all over again.</p>
+
+        <p><em>Mr. Hogan, The Man I Knew</em> sets the record straight about this American icon,revealing his humor and sensitivity. It captures the magical connection that sometimes happens in life in a truly beautiful story about an unlikely friendship between two very different people who shared the same passion.</p>
+
+        <a href="https://www.amazon.com/Mr-Hogan-Man-Knew-Friendship/dp/1592405452/ref=sr_1_1?s=books&ie=UTF8&qid=1532044480&sr=1-1&keywords=kris+tschetter" class="btn btn-success float-right">Amazon</a>
+    </div>
+</div>
+
+{% endblock %}

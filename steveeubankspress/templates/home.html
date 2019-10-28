@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+
+{% block title %}
+Steve Eubanks Press
+{% endblock title %}
+
+{% block headerblock %}
+<div class="container">
+    <div class="container">
+        <h1 class="header-title"style="text-align: center; font-family: 'Vast Shadow', cursive;">Steve Eubanks</h1>
+        <h6 style="text-align: center; font-family: Rye, cursive;">New York Times Bestselling Author</h6>
+    </div>
+    <div style="text-align: center;">
+        <a href="https://www.facebook.com/steve.eubanks.16/" class="leader">
+            <i class="fab fa-facebook" style="color: black; font-size:25px;"></i>
+        </a>
+        <a href="https://twitter.com/jseubanks" class="leader">
+            <i class='fab fa-twitter' style="color: black; font-size:25px; padding-left: 20px;"></i>
+        </a>
+        <a href="{{url_for('books')}}">
+            <i class='fas fa-book-open' style="color: black; font-size:25px; padding-left: 20px;"></i>
+        </a>
+    </div>
+    <div style="border-bottom: 5px solid black; padding-top:10px;"></div>
+</div>
+
+{% endblock headerblock %}
+
+{% block carouselblock %}
+<div class="jumbotron jt-carousel">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="margin:0 auto;" data-interval="5000">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <a href="#River"><img class='d-block w-100 carousel-image' src="{{ url_for('static',filename='img/Going down to the river cover.jpg') }}" alt="Goin down cover"></a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <a href="#Augusta"><img class="d-block w-100 carousel-image" src="{{ url_for('static',filename='img/Augusta cover.jpg') }}" alt="Augusta_cover"></a>
+                </div>
+            </div>
+            <!-- All American Novel -->
+            <div class="carousel-item">
+                <div class="container">
+                    <a href="#all-american-book"><img class='d-block w-100 carousel-image' src="{{ url_for('static',filename='img/all american cover.jpg') }}" alt="All American_Cover"></a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <a href="#Dixie"><img class='d-block w-100 carousel-image' src="{{ url_for('static',filename='img/win and die cover.jpg') }}" alt="To Win and Die in Dixie Cover"></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock carouselblock %}
+
+{% block bodyblock %}
+<!-- <div class="jumbotron">
+    <h1>Welcome!</h1>
+    <h3>The site is currently f6a000under construction, but we would love to get your input on what you would like to see here. </h3>
+</div> -->
+
+
+<div class="container-fluid">
+    <h3 class="section-title" id="Recent_books">Recent Books</h3>
+    <div class="container book-block">
+        <h4 id="all-american-book">All American</h4>
+        <img class="rounded float-right" src="{{url_for('static',filename='img/all american cover.jpg')}}" alt="All American Book Cover'" height='150px'>
+        <p>All American is Steve Eubanks inspiring story of two football rivals who faced each other in the momentous 2001 Army-Navy Game who would both go on to serve in the United States military in the Iraq War.</p>
+
+
+        <p>In December, 2001, as fires still burned beneath the World Trade Center ruins, West Point cadet Chad Jenkins and Naval Academy midshipman Brian Stann faced off at Veterans Stadium in Philadelphia in what would become the most-watched college football game of the decade: the matchup between the Army Black Knights and the Navy Midshipmen.</p>
+
+
+        <p>With his team down by thirteen points, Stann, a Navy linebacker, came into contact with Jenkins, the Army quarterback, for the first time, landing a perfect tackle. Though these two players would not meet again for another decade, Stann and Jenkins shared the same path: both went to war, led soldiers, and witnessed and participated in events they never imagined possible.</p>
+
+
+        <p>A moving and fascinating dual profile of honor, duty, courage, and competition, illustrated with photos, All American is a thoughtful exploration of American character and values, embodied in the lives of two remarkable young men.</p>
+
+        <a href="https://www.amazon.com/All-American-Young-Army-Navy-Fought/dp/0062202812/ref=sr_1_1?ie=UTF8&qid=1531326410&sr=8-1&keywords=steve+eubanks" class="btn btn-success float-right">Amazon</a>
+    </div>
+
+    <div class="container book-block">
+        <h4 id="River">Going Down to the River</h4>
+        <img class="rounded float-left" src="{{url_for('static',filename='img/Going down to the river cover.jpg')}}" alt="Goin' Down to the River Cover" height='150px'>
+        <p>Doug Seegers left New York for Nashville in search of every songwriter’s dream. When he didn’t find success, he fell into a state of loneliness that fed an addiction he had battled since adolescence. Soon, he was homeless, playing his guitar on the street with a cardboard sign asking for money. But then he cried out to God in repentance and need, and God graciously met him. Doug then found sobriety, regained some footing, and in a miraculous moment was discovered outside a food pantry by a Swedish musician and documentarian who put his story on the air in Stockholm. Within days of the documentary airing--even though he still walked to the public library every day and acquired most of his belongings from nearby Dumpsters--Doug had the number-one selling song in Sweden. </p>
+        <p>Going Down to the River is Doug’s inspirational story of faith, forgiveness, and the power of prayer and belief. It is also the never-give-up tale of a man who played music for 55 years without success only to become a chart-topping artist at the age of 62.</p>
+        <a href="https://www.amazon.com/Going-Down-River-Unforgettable-Miraculous/dp/0718095677/ref=sr_1_1?s=books&ie=UTF8&qid=1531326517&sr=1-1&keywords=going+down+to+the+river&dpID=514wsyLsm1L&preST=_SY344_BO1,204,203,200_QL70_&dpSrc=srch" class="btn btn-success float-right">Amazon</a>
+
+    </div>
+    <div class="container book-block">
+        <h4 id="Dixie">To Win and Die in Dixie</h4>
+        <img class="rounded float-right" src="{{url_for('static',filename='img/win and die cover.jpg')}}" alt="To Win And Die in Dixie Cover" height='150px'>
+        <p>A fascinating biography of a forgotten golf legend, a riveting whodunit of a covered-up killing, a scalding exposé of a closed society—in To Win and Die in Dixie, award-winning writer Steve Eubanks weaves all these elements into a masterly book that resurrects a superb sportsman and reconstructs a startling crime.</p>
+
+        <p>J. Douglas Edgar was the British-born golfer who broke every record, invented the modern swing, and coached such winners as Bobby Jones, the greatest amateur in history, and Alexa Stirling, the finest female player of her day. But on August 8, 1921, he was a man dead in the middle of the road, the victim, conventional wisdom said, of a hit-and-run.</p>
+
+        <p>Comer Howell thought otherwise. He was an Atlanta Constitution reporter and heir to the paper’s fortune, a man frustrated by his reputation as the pampered boss’s son. To Howell, the physical evidence didn’t add up to a car accident. As he chronicled Edgar’s life, Howell discovered a working-class striver who had risen in the world through a passion to succeed, a quality the newspaperman admired. And as he investigated Edgar’s death, Howell also found a man whose recklessness may have doomed him to a violent demise.</p>
+
+        <p>Cutting cinematically between Howell’s present and Edgar’s championship past, To Win and Die in Dixie brilliantly portrays one man’s quest for excellence and another’s search for redemption and the truth. Their stories meet in a Southern society of plush country-club golf courses, vast wealth, and decadent secrets.</p>
+
+        <p>Filled with the vivid golf writing for which its author is renowned, To Win and Die in Dixie is a real-life story both shocking and inspiring, a book that propels Steve Eubanks to a new level of literary achievement.</p>
+
+        <a href="https://www.amazon.com/Win-Die-Dixie-Mysterious-Creator/dp/034551081X/ref=sr_1_4?ie=UTF8&qid=1531326410&sr=8-4&keywords=steve+eubanks&dpID=51MxfYU67PL&preST=_SY291_BO1,204,203,200_QL40_&dpSrc=srch" class="btn btn-success float-right">Amazon</a>
+
+    </div>
+    <div class="container book-block">
+        <h4 id="Augusta">Augusta</h4>
+        <img class="rounded float-left" src="{{url_for('static',filename='img/Augusta cover.jpg')}}" alt="Augusta Cover" height='150px'>
+        <p>Founded in 1933, the Augusta National Golf Club is the perfect course. Co-designed by legends Bobby Jones and Alister MacKenzie, Augusta boasts gorgeous fairways and perfectly manicured greens, set against a breathtaking backdrop of azaleas and pines. Every April, the invitation-only Masters Tournament is watched by millions of avid viewers around the globe. But the exclusive club, with a membership comprising some of the world's most powerful and influential men, is also notorious for a legacy of secrets and controversy.</p>
+
+        <p>Journalist and novelist Steve Eubanks used all of his investigative and storytelling talents to get to the heart of Augusta's turbulent history, including its 44-year rule under the iron fist of Cliff Roberts and his suicide on the club's grounds; the Masters' impetuous yet long-standing relationship with CBS; allegations of racism; and the club's countless, rigid rules (members can even be expelled for wearing their green Augusta blazers outside the club).</p>
+
+        <p>With 45 inspiring photographs, Eubanks's balanced account also captures the historic moments that evoke deep affection for Augusta, from Dwight Eisenhower teeing off in the days before the Masters was televised to Jack Nicklaus's emotional victory at age 46, 23 years after he won his first green jacket. With a new chapter on Tiger Woods's 1997 triumph and published just in time for the 1998 Masters, Augusta is essential reading for anyone who wants the complete story of American golf's most hallowed ground.</p>
+
+        <a href="https://www.amazon.com/Augusta-Masters-Tournament-Steve-Eubanks/dp/0767902157/ref=sr_1_6?ie=UTF8&qid=1531326410&sr=8-6&keywords=steve+eubanks" class="btn btn-success float-right">Amazon</a>
+    </div>
+    <div class="container" style="padding-top: 15px;">
+        <a class="btn btn-success float-right white-text" href="{{url_for('books')}}">See More Books</a>
+    </div>
+</div>
+<div class="container" id="About_Steve" style="padding-top: 20px;">
+    <img class="rounded " src="{{ url_for('static',filename='img/steve_headshot_2.JPG') }}" alt="SteveEubanks" height="200px" style="float: left; padding: 0 1.5em 1em 0;">
+    <h3 class="section-title">About Steve</h3>
+    <p>Steve Eubanks is a New York Times bestselling author and award-winning journalist. He has authored or co-authored more than 30 titles in biography, business and narrative non-fiction. An accomplished speaker, Steve's diverse range has allowed him to do everything from teach the apprentice business schools for the PGA of America to provide the keynote address at the Joint Forces Reserve Orientation Course of the Command Second Fleet. </p>
+</div>
+
+{% endblock %}
